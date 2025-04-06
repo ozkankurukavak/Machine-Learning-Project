@@ -1,4 +1,4 @@
-import os
+from us_visa.pipline.training_pipeline import TrainPipeline
 
-mongodb_url = os.getenv('MONGODB_URL')
-print(mongodb_url)
+obj = TrainPipeline()
+obj.run_pipeline()
