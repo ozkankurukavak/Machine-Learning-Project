@@ -1,11 +1,4 @@
-from us_visa.logger import logging
-from us_visa.exception import USvisaException
-import sys
+import os
 
-logging.info("Merhaba")
-
-
-try:
-    a = 2/0 
-except Exception as e:
-    raise USvisaException(e,  sys)
+mongodb_url = os.getenv('MONGODB_URL')
+print(mongodb_url)
